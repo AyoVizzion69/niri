@@ -255,8 +255,9 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
-
+spawn-at-startup "waybar" "-c" "/home/vizzion/.config/waybar/config-niri"
+spawn-at-startup "swww-daemon" "&"
+spawn-at-startup "swww" "img" "/home/vizzion/Pictures/wallpaper/wallpapersden.com_black-hole-hd_1920x1200.jpg"
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
 // Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
